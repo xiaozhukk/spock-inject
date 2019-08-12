@@ -11,6 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
+ * <pre>
  * help Mock and inject beans for Spock unit test framework.
  *
  * some framework(eg: Spring) help manage beans relations on the runtime, and probability
@@ -25,7 +26,7 @@ import java.util.Set;
  * run SpockAnnotation.init(this) in the setup method, to make all run
  *
  * eg:
- *
+ * {@code
  * class Foo {
  *     @Resource
  *     private Bar bar;
@@ -63,7 +64,7 @@ import java.util.Set;
  *         1 * bar.method1()
  *     }
  * }
- *
+ *}</pre>
  */
 public class SpockAnnotation {
 

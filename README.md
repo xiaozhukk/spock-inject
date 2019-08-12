@@ -12,10 +12,22 @@ have no setter method for dependent bean. it is hard to Mock the dependent beans
 this extension will make it easy to achieve this purpose by only several Annotations.
 
 
-{@link Subject} indicate the Object to be tested. this annotation is primitive provided
+`@Subject` indicate the Object to be tested. this annotation is primitive provided
 by Spock framework, and we just reuse it.
-{@link Mock} indicate Objects/beans are required by the Object which to be tested
+`@Mock` indicate Objects/beans are required by the Object which to be tested
 
+
+## Repository
+
+```xml
+<dependency>
+  <groupId>com.github.xiaozhukk</groupId>
+  <artifactId>spock-inject</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+## How to use
 
 run SpockAnnotation.init(this) in the setup method
 
